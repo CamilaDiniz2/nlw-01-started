@@ -1,42 +1,4 @@
-:root {
-  --color-background: #f0f0f5;
-  --color-titles: #322153;
-  --color-texts: #6c6c80;
-  --color-greenpeace: #34cb79;
-  --color-greenpeace-2: #2fb86e;
-  --color-text-button: #ffffff;
-}
-
-html,
-body,
-ul,
-li,
-p,
-div,
-img,
-h1,
-h2 {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  background: var(--color-background);
-  width: 100%;
-  overflow: hidden;
-}
-
-button {
-  outline: none;
-  border: none;
-}
+@import './config-geral.css';
 
 #conteudo {
   width: 85%;
@@ -82,6 +44,7 @@ header .cadastrar-ponto a img {
   display: flex;
   flex-direction: column;
   justify-content: baseline;
+  text-align: center;
 }
 
 #conteudo-principal .conteudo-pagina-inicial h1 {
@@ -90,7 +53,6 @@ header .cadastrar-ponto a img {
   font-weight: 700;
   line-height: 150%;
   margin-bottom: 1rem;
-  text-align: justify;
 }
 
 #conteudo-principal .conteudo-pagina-inicial p {
@@ -103,7 +65,7 @@ header .cadastrar-ponto a img {
 #conteudo-principal .conteudo-pagina-inicial a {
   background: var(--color-greenpeace);
   width: 70vw;
-  max-width: 300px;
+  max-width: 400px;
   height: 2.8rem;
   display: flex;
   align-items: center;
@@ -136,6 +98,11 @@ header .cadastrar-ponto a img {
 [class*='col-'] {
   width: 100%;
 }
+
+/*  ===================
+        versao desktop
+    ==================
+*/
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
@@ -195,6 +162,10 @@ header .cadastrar-ponto a img {
     flex-direction: row;
   }
 
+  #conteudo-principal .conteudo-pagina-inicial {
+    text-align: justify;
+  }
+
   #conteudo-principal .conteudo-pagina-inicial h1 {
     font-size: 2.2rem;
   }
@@ -203,13 +174,12 @@ header .cadastrar-ponto a img {
   }
 
   #conteudo-principal .conteudo-pagina-inicial a {
-    width: 300px;
-    max-width: 20vw;
+    width: 250px;
     margin-left: 0;
   }
 
   #conteudo-principal .conteudo-pagina-inicial a:hover {
-    width: 320px;
+    width: 290px;
     transition: 500ms;
   }
 

@@ -1,0 +1,39 @@
+:root {
+  --color-background: #f0f0f5;
+  --color-titles: #322153;
+  --color-texts: #6c6c80;
+  --color-greenpeace: #34cb79;
+  --color-greenpeace-2: #2fb86e;
+  --color-text-button: #ffffff;
+}
+
+html,
+body,
+ul,
+li,
+p,
+div,
+img,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background: var(--color-background);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+button {
+  outline: none;
+  border: none;
+}
